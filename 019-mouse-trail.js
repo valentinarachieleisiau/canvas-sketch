@@ -13,8 +13,7 @@ const sketch = ({ canvas, width, height }) => {
   // Gestione dell'evento mousemove, ovvero quando il mouse si muove nel canvas  
   const onMouseMove = (e) => {
     const rect = canvas.getBoundingClientRect(); // Ottieni le dimensioni del canvas
-    // Converti le coordinate dal sistema di coordinate della finestra
-    // al sistema di coordinate del canvas
+    // Converti le coordinate dal sistema di coordinate della finestra al sistema di coordinate del canvas
     mouse.x = (e.clientX - rect.left) * (width / rect.width);
     mouse.y = (e.clientY - rect.top) * (height / rect.height);
   };

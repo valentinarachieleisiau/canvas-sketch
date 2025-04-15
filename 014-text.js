@@ -12,16 +12,13 @@ const sketch = () => {
     context.fillStyle = 'white';
     context.fillRect(0, 0, width, height);
 
-    let testo = "F!";
-    let fontSize = 80;
-    let fontFamily = "Arial";
 
-    context.font = fontSize + "px " + fontFamily;
+    context.font = "80px Arial";
     context.textBaseline = "middle";
     context.textAlign = "center";
     context.fillStyle = "red";
 
-    context.fillText(testo, width/2, height/2);
+    context.fillText("F!", width/2, height/2);
 
   };
 };
