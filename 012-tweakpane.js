@@ -1,7 +1,7 @@
 const canvasSketch = require('canvas-sketch');
 const { degToRad, mapRange } = require('canvas-sketch-util/math');
 const random = require('canvas-sketch-util/random');
-import {Pane} from 'tweakpane';
+const {Pane} = require('tweakpane');
 
 const settings = {
   //dimensions: [ 1024, 1024 ],
