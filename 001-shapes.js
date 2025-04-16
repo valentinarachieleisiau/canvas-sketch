@@ -14,7 +14,7 @@ const sketch = () => {
     context.beginPath();
     context.rect(10, 10, 100, 100); //rettangolo
     context.lineWidth = 10;
-    context.strokeStyle = 'rgb(22, 28, 195)';
+    context.strokeStyle = 'rgb(122, 28, 195)';
     context.stroke();
     context.closePath();
     context.beginPath();
