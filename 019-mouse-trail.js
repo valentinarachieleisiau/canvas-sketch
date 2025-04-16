@@ -23,6 +23,17 @@ const sketch = ({ canvas, width, height }) => {
   context.fillStyle = 'white';
   context.fillRect(0, 0, width, height);
 
+  let testo = "V";
+    let fontSize = 120;
+    let fontFamily = "Verdana";
+
+    context.font = fontSize + "px " + fontFamily; //80px Arial
+    context.textBaseline = "middle";
+    context.textAlign = "center";
+    //context.fillStyle = "yellow";
+
+    
+
   // Aggiungi l'event listener, ovver una sorta di guardiano in attesa che qualcosa succeda, in questo caso il movimento del mouse
   canvas.addEventListener('mousemove', onMouseMove);
   
@@ -30,8 +41,10 @@ const sketch = ({ canvas, width, height }) => {
     
     // Disegna un cerchio nella posizione del mouse
     context.beginPath();
-    context.arc(mouse.x, mouse.y, 20, 0, Math.PI * 2);
-    context.fillStyle = 'blue';
+    //context.arc(mouse.x, mouse.y, mouse.y / 10, 0, Math.PI * 2);
+    
+    context.fillStyle = 'rgb(' + mouse.x + ',' + mouse.y + ', 100)';
+    context.fillText(testo, mouse.x, mouse.y);
     context.fill();
     context.closePath();
   };

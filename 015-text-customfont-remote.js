@@ -12,11 +12,11 @@ const sketch = () => {
     context.fillStyle = 'white';
     context.fillRect(0, 0, width, height);
 
-    context.font = '80px Poppins, sans-serif';
+    context.font = '80px Moo Lah Lah, sans-serif';
     context.textBaseline = "middle";
     context.textAlign = "center";
     context.fillStyle = "red";
-    context.fillText("Pop!", width/2, height/2);
+    context.fillText("Moo!", width/2, height/2);
   };
 };
 
@@ -24,7 +24,7 @@ const sketch = () => {
 if (typeof document !== 'undefined') {
   const link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap';
+  link.href = 'https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap';
   document.head.appendChild(link);
   
   // Avvia solo quando il font è caricato
